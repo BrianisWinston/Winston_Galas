@@ -1,8 +1,21 @@
-<form id="<%= robots_show_url %>" method="get">
-  <input type="text" name="robot_string" value="">
-  <input type="submit" name="" value="Generate robot">
-</form>
+<h1 id="Heading">See your own personal robot!</h1>
+<div id="robot-form">
+  <form action="<%= robots_show_url %>" method="get">
+    <input type="text" name="robot_string" value="" id="robot-input">
+    <input type="submit" name="" value="Generate robot" id="robot-submit">
+  </form>
+</div>
 
-<div id="robot-image">
-  <img src="<%= @string %>">
+<div id="robot-image-container">
+  <div id="robot-image-box">
+    <% if @string %>
+    <img id="robot-image" src="<%= @string %>">
+    <% else %>
+    <div id="no-robot">
+      <div id="no-robot-text">
+        Type anything to see your own robot!
+      </div>
+    </div>
+    <% end %>
+  </div>
 </div>

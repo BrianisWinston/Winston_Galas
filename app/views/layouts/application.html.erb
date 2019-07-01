@@ -5,12 +5,47 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <style>
-      #robot-image {
+
+      #Heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #robot-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: relative;
-        margin: 0 auto;
-        width: 400px;
-        height: 200px;
-        background: lightblue;
+        padding-bottom: 35px;
+      }
+
+      #robot-input {
+        position: relative;
+        right: 15px;
+        width: 140px;
+      }
+
+      #robot-submit {
+        position: relative;
+        left: 15px;
+        width: 140px;
+      }
+
+      #robot-image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #robot-image-box {
+        border: 2px solid black;
+        width: 300px;
+        height: 300px;
+      }
+
+      #robot-image {
+        display: block;
       }
 
       #submit-form {
@@ -19,6 +54,17 @@
         width: 200px;
         height: 200px;
         background: lightgrey;
+      }
+
+      #no-robot {
+        width: 300px;
+        height: 300px;
+      }
+
+      #no-robot-text {
+        position: relative;
+        top: 50%;
+        text-align: center;
       }
     </style>
     <%= stylesheet_link_tag    'application', media: 'all' %>
