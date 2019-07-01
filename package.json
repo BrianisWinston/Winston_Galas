@@ -1,7 +1,9 @@
 {
   "name": "go_nimbly",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "animate.css": "^3.7.2"
+  },
   "description": "This README would normally document whatever steps are necessary to get the application up and running.",
   "version": "1.0.0",
   "main": "index.js",
