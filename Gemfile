@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.3.1'
+ruby '2.4.6'
 
 gem "animate-rails"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
